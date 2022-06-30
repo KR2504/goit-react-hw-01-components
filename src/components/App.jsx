@@ -1,6 +1,13 @@
-
 import { Profile } from "./ToDoProfile/profile";
-import user from "./data.json/profile.json/user.json";
+import { Statistics } from "./ToDoStatistic/statistic";
+import { FriendList } from "./ToDoFriends/friends"
+import { TransactionHistory } from "./ToDoTransactions/transactions";
+
+import user from "./data/profile.json";
+import statistic from "./data/statistic.json"
+import friendsList from "./data/friends.json";
+import transactions from "./data/transactions.json";
+
 export const App = () => {
   return (
     <div
@@ -22,6 +29,9 @@ export const App = () => {
   views={user.stats.views}
   likes={user.stats.likes}
       />
+      <Statistics title="Upload stats" stats={statistic} />
+      <FriendList friends={friendsList} />
+      {/* <TransactionHistory items={transactions} /> */}
     </div>
   );
 };
