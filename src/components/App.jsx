@@ -1,7 +1,7 @@
 import { Profile } from "./ToDoProfile/profile";
 import { Statistics } from "./ToDoStatistic/statistic";
 import { FriendList } from "./ToDoFriends/friends"
-import { TransactionHistory } from "./ToDoTransactions/transactions";
+import { TransactionHistory } from "./ToDoTransactions/history";
 
 import user from "./data/profile.json";
 import statistic from "./data/statistic.json"
@@ -14,7 +14,7 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
-        justifyContent: 'center',
+        flexDirection: 'column',
         alignItems: 'center',
         fontSize: 40,
         color: '#010101'
@@ -31,7 +31,7 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={statistic} />
       <FriendList friends={friendsList} />
-      {/* <TransactionHistory items={transactions} /> */}
+      <TransactionHistory items={transactions} />
     </div>
   );
 };

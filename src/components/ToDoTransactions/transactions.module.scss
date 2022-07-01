@@ -1,0 +1,32 @@
+.history {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    .headList {
+        background-color: rgb(165, 211, 211);
+        text-align: center;
+        .headBox {
+            .headItem {
+                height: 50px;
+                padding: 10px;
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                border: 1px solid teal;
+            }
+        }
+    }
+    .bodyList {
+        text-align: center;
+        .bodyBox:nth-child(2n) {
+            background-color: rgb(209, 246, 246);
+        }
+        .bodyItem {
+            padding: 10px;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 19px;
+            letter-spacing: 0.03em;
+            border: 1px solid teal;
+        }
+    }
+}
